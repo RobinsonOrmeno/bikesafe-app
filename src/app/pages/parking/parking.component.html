@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<h1>Selecciona un estacionamiento</h1>
+<div class="col-12">
+    <div id="map-container-google-1" class="z-depth-1-half map-container col-12" style="height: 80% !important;">
+        <iframe class="col-12" src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div>
+</div>
+
+
+<button (click)="toggle()" id="bt">
+    {{buttonName}}
+</button>
+<button ng-click='vm.buttonClick()'>Enviar</button>
+<ng-container *ngIf="show">
+    <div style="margin: 0 auto;text-align: left;">
+        <div>
+            <label>Name:</label>
+            <div><input id="tbname" name="yourname" /></div>
+        </div>
+        <div>
+            <label>Email Address:</label>
+            <div><input name="email" id="email" /></div></div>
+        <div>
+            <label>Additional Information (optional):</label>
+            <div><textarea rows="5" cols="46"></textarea></div>
+        </div>
+    </div>
+</ng-container>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>© 2020 Bike Safe.</p>
+  </footer>
+
+  <script>
+      
+  </script>
