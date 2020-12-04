@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-parking',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParkingComponent implements OnInit {
 
-  constructor() { }
+  lat = -33.5461501;
+  lng = -70.5873854;
+  zoom = 16;
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -25,5 +30,21 @@ export class ParkingComponent implements OnInit {
       this.buttonName = "Show";
   }
 
+  markerClicked($event:any){
+    console.log($event);
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+    
+  }
+
   
 }
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: 'modal.html',
+})
+export class DialogContentExampleDialog {}
