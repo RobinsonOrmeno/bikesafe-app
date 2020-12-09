@@ -9,19 +9,22 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class ModalComponent implements OnInit {
 
+  firstFormGroup:FormGroup;
+  secondFormGroup: FormGroup;
 
+  constructor(private _formBuilder: FormBuilder ) {
 
-  constructor(private _formBuilder: FormBuilder , firstFormGroup:FormGroup,  secondFormGroup: FormGroup) {
- 
-  }
-
-  ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+ 
+  }
+
+  ngOnInit() {
+    
   }
 
   

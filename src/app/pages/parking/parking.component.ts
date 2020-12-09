@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-parking',
@@ -24,7 +25,7 @@ export class ParkingComponent implements OnInit {
 
   markerClicked($event:any){
     console.log($event);
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+    const dialogRef = this.dialog.open(ModalComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
@@ -35,8 +36,3 @@ export class ParkingComponent implements OnInit {
   
 }
 
-@Component({
-  selector: 'dialog-content-example-dialog',
-  templateUrl: 'modal/modal.component.html',
-})
-export class DialogContentExampleDialog {}

@@ -23,7 +23,11 @@ import { AgmCoreModule } from '@agm/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ModalComponent } from './pages/parking/modal/modal.component';
 import {MatStepperModule} from '@angular/material/stepper';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+  import {MatInputModule,} from '@angular/material/input';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +57,12 @@ import {FormsModule} from '@angular/forms';
     }),
     MatDialogModule,
     MatStepperModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
