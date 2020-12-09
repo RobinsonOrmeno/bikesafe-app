@@ -21,7 +21,9 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
 import { AgmCoreModule } from '@agm/core';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { ModalComponent } from './pages/parking/modal/modal.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     HomeComponent,
     ParkingComponent,
     PerfilComponent,
-    PagosComponent
+    PagosComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +49,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatIconModule,
     MatListModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCSEgxkHtuJBN5fCMVndhC_NLGUKAci16Y'
+      apiKey: 'AIzaSyCHNVHjvqF9HVS1u1pjmDcSdVAOmIUnEow'
     }),
-    MatDialogModule
+    MatDialogModule,
+    MatStepperModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

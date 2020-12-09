@@ -20,15 +20,7 @@ export class ParkingComponent implements OnInit {
   public show:boolean = false;
   public buttonName:any = 'Selecciona';
 
-  toggle() {
-    this.show = !this.show;
 
-    // CHANGE THE NAME OF THE BUTTON.
-    if(this.show)  
-      this.buttonName = "Hide";
-    else
-      this.buttonName = "Show";
-  }
 
   markerClicked($event:any){
     console.log($event);
@@ -45,6 +37,6 @@ export class ParkingComponent implements OnInit {
 
 @Component({
   selector: 'dialog-content-example-dialog',
-  templateUrl: 'modal.html',
+  templateUrl: 'modal/modal.component.html',
 })
 export class DialogContentExampleDialog {}
