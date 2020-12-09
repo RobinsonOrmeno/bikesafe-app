@@ -14,6 +14,8 @@ export class ParkingComponent implements OnInit {
   zoom = 16;
   markers:any[] = [];
 
+  icon:any;
+
   constructor(public dialog: MatDialog) { 
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition((position) => {
@@ -25,6 +27,8 @@ export class ParkingComponent implements OnInit {
       this.markers.push({lat:-33.4461501, lng:-70.4873854});
       this.markers.push({lat:-33.3461501, lng:-70.3873854});
     }
+
+    this.icon = { url: 'https://lh3.googleusercontent.com/proxy/0isvlditpAYKXEh06nEayhTONe0sAaSkGyTuDjp7xDS1aTOGRYFGY0XKnwPa2bTuboZf_iE2DyGaILiGDPa8F0BhWfdXBTXtNC7yF6DL-iyEHUKC9Vpd_zEM8zziKPzWSI8kg_sqczIrcd1-vsgpMpo', scaledSize: {height: 40, width: 40}};
   }
 
   ngOnInit(): void {
