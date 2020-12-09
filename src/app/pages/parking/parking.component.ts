@@ -12,8 +12,20 @@ export class ParkingComponent implements OnInit {
   lat = -33.5461501;
   lng = -70.5873854;
   zoom = 16;
+  markers:any[] = [];
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) { 
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+      });
+
+      this.markers.push({lat:-33.5461501, lng:-70.5873854});
+      this.markers.push({lat:-33.4461501, lng:-70.4873854});
+      this.markers.push({lat:-33.3461501, lng:-70.3873854});
+    }
+  }
 
   ngOnInit(): void {
   }
