@@ -23,9 +23,11 @@ export class ParkingComponent implements OnInit {
         this.lng = position.coords.longitude;
       });
 
-      this.markers.push({lat:-33.5461501, lng:-70.5873854});
-      this.markers.push({lat:-33.4461501, lng:-70.4873854});
-      this.markers.push({lat:-33.3461501, lng:-70.3873854});
+  
+
+      this.markers.push({lat:-33.52288331691768, lng:-70.55747836929066});
+      this.markers.push({lat:-33.51092684120825, lng:-70.61701757813015});
+      this.markers.push({lat:-33.44909548614579, lng:-70.65026315097553});
     }
 
     this.icon = { url: 'https://lh3.googleusercontent.com/proxy/0isvlditpAYKXEh06nEayhTONe0sAaSkGyTuDjp7xDS1aTOGRYFGY0XKnwPa2bTuboZf_iE2DyGaILiGDPa8F0BhWfdXBTXtNC7yF6DL-iyEHUKC9Vpd_zEM8zziKPzWSI8kg_sqczIrcd1-vsgpMpo', scaledSize: {height: 40, width: 40}};

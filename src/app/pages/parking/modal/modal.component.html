@@ -1,16 +1,18 @@
 
   
   <mat-horizontal-stepper linear #stepper>
-   <mat-step label = "Contactar al colaborador">
-    <p>Enviar detalles de direccion</p>
-   </mat-step>
+  
  
-   <mat-step label = "Enviar ubicacion">
-    <p>Enviar detalles de ubicacion</p>
+   <mat-step label = "Referencia">
+    <p>Colaborador Juanito</p>
+    <img src="https://i.pinimg.com/originals/af/4d/71/af4d71152eee818682e2068107f692c5.jpg"  width="400" height="400">
    </mat-step>
    
-   <mat-step label = "Elige el metodo de comunicacion"></mat-step>
- 
+   <mat-step label = "Contactar al Colaborador">
+    <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
+
    <p>Llamar</p>
+</mat-step>
   </mat-horizontal-stepper>
   
+

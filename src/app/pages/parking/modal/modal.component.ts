@@ -8,6 +8,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
+  public phone = '[ +56954774589 ]'
+  public title = ' [ Hola, estoy interesado en reservar un espacio porfavor ]';
 
   firstFormGroup:FormGroup;
   secondFormGroup: FormGroup;

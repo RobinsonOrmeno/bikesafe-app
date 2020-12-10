@@ -25,8 +25,8 @@ import { ModalComponent } from './pages/parking/modal/modal.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
-  import {MatInputModule,} from '@angular/material/input';
-
+import {MatInputModule,} from '@angular/material/input';
+import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 
 @NgModule({
   declarations: [
@@ -61,7 +61,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ReactiveFormsModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgxWhastappButtonModule
     
   ],
   providers: [],
