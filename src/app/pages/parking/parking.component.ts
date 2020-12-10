@@ -43,7 +43,9 @@ export class ParkingComponent implements OnInit {
 
   markerClicked($event:any){
     console.log($event);
-    const dialogRef = this.dialog.open(ModalComponent);
+    const dialogRef = this.dialog.open(ModalComponent,{
+      panelClass: 'app-full-bleed-dialog'
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
