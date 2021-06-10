@@ -1,0 +1,11 @@
+.titulo{
+    font-size: 72px;
+    font-weight: bold;
+    color: #05185e;
+    text-align:center;line-height:1.25em;font-size:72px;
+}
+
+.subtitulo {
+    font-weight: bold;
+    text-align:center;line-height:1.67em;font-size:20px
+}
