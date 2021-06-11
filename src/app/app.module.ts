@@ -28,6 +28,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule,} from '@angular/material/input';
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -38,7 +42,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ReviewComponent,
     AboutComponent,
     TermsConditionComponent,
-    HomeComponent,
+   
     ParkingComponent,
     PerfilComponent,
     PagosComponent,
@@ -65,7 +69,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatFormFieldModule,
     MatInputModule,
     NgxWhastappButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatCardModule
     
   ],
   providers: [],
